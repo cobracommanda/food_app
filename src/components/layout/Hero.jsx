@@ -1,22 +1,30 @@
 import Image from "next/image";
 import React from "react";
+import Right from "../icons/Right";
 
 export default function Hero() {
   return (
-    <section className="grid grid-cols-2">
-      <div>
+    <section className="hero">
+      <div className="py-12">
         <h1 className="text-4xl font-semibold">
-          Pizza exponentially enhances life&apos;s every aspect.
+          Everything <br /> is better
+          <br />
+          with a&nbsp;
+          <span className="text-primary">Pizza</span>
         </h1>
-        <p className="mt-4 text-gray-500">
+        <p className="mt-4 my-6 text-gray-500 text-sm">
           Pizza is the missing piece that makes everyday complete, a simple yet
           delicious joy in life
         </p>
-        <div className="flex gap-4 py-2">
-          <button className="bg-primary text-white px-8 py-2 rounded-full">
+        <div className="flex gap-4 text-sm">
+          <button className="bg-primary uppercase items-center text-white flex gap-2 px-4 py-2 rounded-full ">
             Order now
+            <Right />
           </button>
-          <button>Learn more</button>
+          <button className="flex py-2 gap-2 text-gray-600 font-semibold">
+            Learn more
+            <Right />
+          </button>
         </div>
       </div>
       <div className="relative">
